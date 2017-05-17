@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupDevelopment" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Development</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group development</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDevelopmentExtendedTooltip" id="14"/>
+			<ChildItems>
+				<LabelDecoration name="DecorationDevelopment" id="7">
+					<Width>33</Width>
+					<Height>2</Height>
+					<Font ref="style:LargeTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Eugene Bystrov&lt;/&gt;
+&lt;fontsize 8&gt;&lt;link mailto:evgeniy.v.bystrov@gmail.com&gt;evgeniy.v.bystrov&lt;/&gt;&lt;/&gt;&lt;fontsize 8&gt;&lt;link mailto:evgeniy.v.bystrov@gmail.com&gt;@&lt;/&gt;&lt;/&gt;&lt;fontsize 8&gt;&lt;link mailto:evgeniy.v.bystrov@gmail.com&gt;gmail.com&lt;/&gt;&lt;/&gt;</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>&lt;fontsize 8&gt;Evgeniy Bystrov&lt;/&gt;
+&lt;fontsize 8&gt;&lt;link mailto:evgeniy.v.bystrov@gmail.com&gt;evgeniy.v.bystrov&lt;/&gt;&lt;/&gt;&lt;fontsize 8&gt;&lt;link mailto:evgeniy.v.bystrov@gmail.com&gt;@&lt;/&gt;&lt;/&gt;&lt;fontsize 8&gt;&lt;link mailto:evgeniy.v.bystrov@gmail.com&gt;gmail.com&lt;/&gt;&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="DecorationDevelopmentContextMenu" id="8"/>
+					<ExtendedTooltip name="DecorationDevelopmentAdvancedTooltip" id="9"/>
+				</LabelDecoration>
+				<Button name="CommandSentence" id="19">
+					<Type>UsualButton</Type>
+					<Width>33</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandSentence</CommandName>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandSentenceExtendedTooltip" id="20"/>
+				</Button>
+				<Button name="CommandMail" id="15">
+					<Type>UsualButton</Type>
+					<Width>33</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandMail</CommandName>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<Picture>
+						<xr:Ref>CommonPicture.Mail</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="MailCommandTheExtendedTooltip" id="16"/>
+				</Button>
+				<Button name="CommandError" id="21">
+					<Type>UsualButton</Type>
+					<Width>33</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandError</CommandName>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandErrorTheExtendedTooltip" id="22"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="GroupPages" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ExtendedTooltip name="GroupPagesAdvancedTooltip" id="27"/>
+			<ChildItems>
+				<Page name="GruppaGeneralInformation" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Information</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Info</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Gruppa general information</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupGeneralInformationExtendedTooltip" id="29"/>
+					<ChildItems>
+						<LabelDecoration name="DecorationInformation" id="37">
+							<Width>32</Width>
+							<Height>20</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Mobile package created for to keep records of personal income and expenses.
+
+Planned features:
+
+1.  Extension of
+planning functionality 2.  Improving
+reporting 3.  Integration with standard solutions 1C.
+4.  Translate interface to english</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Available now in Russian only</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationInformationContextMenu" id="38"/>
+							<ExtendedTooltip name="DecorationExtendedTooltipInformation" id="39"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="GroupSetting" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Setting</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>How to start</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group setting</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupSettingExtendedTooltip" id="31"/>
+					<ChildItems>
+						<LabelDecoration name="DecorationSetting" id="32">
+							<Width>32</Width>
+							<Height>20</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Before starting click on the tab "Catalogs" and fill in the catalog "Currencies" "Article" "Wallets".
+
+In the directory "Currencies" is required to fill a full description and description cents for beautiful display in documents.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Available now in Russian only</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="DecorationSettingContextMenu" id="33"/>
+							<ExtendedTooltip name="DecorationSettingAdvancedTooltip" id="34"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="GroupWork" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Work</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>How to use</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group work</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupWorkExtendedTooltip" id="36"/>
+					<ChildItems>
+						<LabelDecoration name="BackgroundInformation" id="23">
+							<Width>32</Width>
+							<Height>20</Height>
+							<VerticalStretch>true</VerticalStretch>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>On the main page are buttons for quick access to document:
+
+- &lt;/&gt;Money income increases the balance in the selected purse.
+
+&lt;img 0:954bbe9a-f221-420c-af91-709c8c960c53/&gt;- Expense money reduces balance.
+
+- Money transfer moves cash from a purse in the other for example removal from the card convert currencies etc.)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Available now in Russian only</v8:content>
+								</v8:item>
+							</Title>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+							</Border>
+							<ContextMenu name="BackgroundInformationContextMenu" id="24"/>
+							<ExtendedTooltip name="SupplementalInformationExtendedTooltip" id="25"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Help" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Help</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="CommandMail" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Leave
+opinion</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reply</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command mail</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Mail</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandMail</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandSentence" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Make
+sentence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Send offer
+</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command sentence</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Sentence</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandSentence</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandError" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Notify
+about error</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Bug report</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command error</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Bug</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandError</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

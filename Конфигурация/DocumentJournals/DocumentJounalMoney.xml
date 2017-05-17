@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<DocumentJournal uuid="a94ce4e9-d819-45c6-8a7b-1eea06a9289b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.DocumentJounalMoney" category="Selection">
+				<xr:TypeId>44333134-8f5e-4057-a09e-733b40a3aab1</xr:TypeId>
+				<xr:ValueId>1f348f2d-fba8-4b6c-9715-56a61127938c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.DocumentJounalMoney" category="List">
+				<xr:TypeId>4fe60551-273b-4fa2-851e-c36a30989d60</xr:TypeId>
+				<xr:ValueId>c8c00413-5aba-410f-bf40-b809e3f5537e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.DocumentJounalMoney" category="Manager">
+				<xr:TypeId>3df58e41-eb29-4cbd-b07d-01d9a1c91c94</xr:TypeId>
+				<xr:ValueId>974849e0-53c5-43f1-ba91-80ca987196f6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>DocumentJounalMoney</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Document jounal money</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.DocumentJounalMoney.Form.ListForm</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyIncome</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ExpenseMoney</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyTransfer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Debt</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="d9b187b2-7569-4179-933b-5612b847b829">
+				<Properties>
+					<Name>Wallet</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Wallet</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Wallet</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ExpenseMoney.Attribute.Wallet</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyTransfer.Attribute.Recipient</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyIncome.Attribute.Wallet</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Debt.Attribute.Counterparty</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="b8dd2efd-92dc-494a-aa4a-2ff3918e0836">
+				<Properties>
+					<Name>Sum</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sum</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ExpenseMoney.Attribute.DeleteSum</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyIncome.Attribute.DeleteSum</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyTransfer.Attribute.SumIncome</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Debt.Attribute.Sum</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="9369453b-2b37-49b5-9e9d-b8812b398d4f">
+				<Properties>
+					<Name>Details</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Details</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Details</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ExpenseMoney.Attribute.Details</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyTransfer.Attribute.Details</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyIncome.Attribute.Details</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Debt.Attribute.Details</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="3344d208-04a9-46ac-b4c9-7331fe05b525">
+				<Properties>
+					<Name>Sender</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sender</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sender</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyTransfer.Attribute.Sender</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="0fdc7ef3-810d-4652-afe2-22dc0a92521e">
+				<Properties>
+					<Name>Expenditure</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Expenditure</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyIncome.Attribute.DeleteExpenditureDDS</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ExpenseMoney.Attribute.DeleteExpenditureDDS</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.MoneyTransfer.Attribute.Expenditure</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Debt.Attribute.Operation</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ListForm</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

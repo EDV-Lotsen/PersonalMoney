@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<Button name="GeneralCommandRepostingDocuments" id="1">
+			<Type>UsualButton</Type>
+			<Width>32</Width>
+			<CommandName>CommonCommand.RepostingDocuments</CommandName>
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<ExtendedTooltip name="GeneralCommandRepostingDocumentsAdvancedTooltip" id="2"/>
+		</Button>
+		<Button name="GeneralCommandDeleteMarkedObjects" id="5">
+			<Type>UsualButton</Type>
+			<Width>32</Width>
+			<CommandName>CommonCommand.DeleteMarkedObjects</CommandName>
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Picture>
+				<xr:Ref>CommonPicture.DeleteMarked</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="GeneralCommandDeleteMarkedObjectsExtendedTooltip" id="6"/>
+		</Button>
+		<Button name="ProgramSettings" id="9">
+			<Type>UsualButton</Type>
+			<Width>32</Width>
+			<CommandName>Form.Command.ProgramSettings</CommandName>
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Picture>
+				<xr:Ref>CommonPicture.Settings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="ProgramSettingsTheExtendedTooltip" id="10"/>
+		</Button>
+		<Button name="GeneralCommandBackupCopy" id="3">
+			<Type>UsualButton</Type>
+			<Width>32</Width>
+			<CommandName>CommonCommand.BackupCopy</CommandName>
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Picture>
+				<xr:Ref>CommonPicture.BackupCopy</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="GeneralCommandBackupAdvancedTooltip" id="4"/>
+		</Button>
+		<Button name="Sync" id="11">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<Width>32</Width>
+			<CommandName>Form.Command.Sync</CommandName>
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<ExtendedTooltip name="SyncAdvancedTooltip" id="12"/>
+		</Button>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ProgramSettings" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Program settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Program settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionOutputParameters</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ProgramSettings</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Sync" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sync</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Sync</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sync</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExchangePlan</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Sync</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

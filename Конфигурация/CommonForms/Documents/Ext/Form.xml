@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<Button name="OpenJournal" id="1">
+			<Type>UsualButton</Type>
+			<Width>32</Width>
+			<Height>1</Height>
+			<CommandName>Form.Command.OpenJournal</CommandName>
+			<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+			<ExtendedTooltip name="OpenJournalAdvancedTooltip" id="2"/>
+		</Button>
+		<UsualGroup name="GroupIncomes" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group incomes</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group incomes</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupIncomesAdvancedTooltip" id="14"/>
+			<ChildItems>
+				<Button name="CommandIncomesMoney" id="11">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandIncomesMoney</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandIncomesMoneyAdvancedTooltip" id="12"/>
+				</Button>
+				<Button name="NewMoneyIncome" id="5">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.NewMoneyIncome</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>New</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="NewMoneyIncomeExtendedTooltip" id="6"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupExpences" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group expences</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group expences</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupExpencesExtendedTooltip" id="16"/>
+			<ChildItems>
+				<Button name="CommandExpencesMoney" id="17">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandExpencesMoney</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandExpencesExtendedTooltip" id="18"/>
+				</Button>
+				<Button name="NewMoneyExpense" id="7">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.NewMoneyExpense</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="NewExpenseMoneyAdvancedTooltip" id="8"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupMove" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group move</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group move</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupMoveExtendedTooltip" id="20"/>
+			<ChildItems>
+				<Button name="CommandMoveMoney" id="21">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandMoveMoney</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandMoveMoneyAdvancedTooltip" id="22"/>
+				</Button>
+				<Button name="NewMoneyTransfer" id="9">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.NewMoneyTransfer</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="NewMoneyTransferExtendedTooltip" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupDebts" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group debts</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group debts</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDebtsExtendedTooltip" id="24"/>
+			<ChildItems>
+				<Button name="CommandDebts" id="25">
+					<Type>UsualButton</Type>
+					<Width>26</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandDebts</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandDebtsExtendedTooltip" id="26"/>
+				</Button>
+				<Button name="New Debt" id="3">
+					<Type>UsualButton</Type>
+					<Width>5</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.NewDebt</CommandName>
+					<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="NewDebtExtendedTooltip" id="4"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="OpenJournal" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Journal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All operations</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open journal</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Journal</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>OpenJournal</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="NewDebt" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New Debt</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>New Debt</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="NewMoneyIncome" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money income</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money income</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>NewMoneyIncome</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="NewMoneyExpense" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money expense</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>NewMoneyExpense</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="NewMoneyTransfer" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money transfer</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>NewMoneyTransfer</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="CommandIncomesMoney" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Incomes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Incomes</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command incomes money</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Receipt</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandIncomesMoney</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandExpencesMoney" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Expences</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Expences</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command expences</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Expense</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandExpencesMoney</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandMoveMoney" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Move</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Money transfers</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command move money</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Move</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandMoveMoney</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandDebts" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Debts</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debts</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command debts</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Debts</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandDebts</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

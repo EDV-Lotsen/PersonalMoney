@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="PostAndClose" id="39">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+				<ExtendedTooltip name="PostAndCloseExtendedTooltip" id="40"/>
+			</Button>
+			<Button name="FormSave" id="41">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="FormWriteExtendedTooltip" id="42"/>
+			</Button>
+			<Button name="FormPost" id="47">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Post</CommandName>
+				<ExtendedTooltip name="FormPostExtendedTooltip" id="48"/>
+			</Button>
+			<Button name="FormCancelPosting" id="43">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.UndoPosting</CommandName>
+				<ExtendedTooltip name="FormCancelHoldingAdvancedTooltip" id="44"/>
+			</Button>
+			<Button name="FormSetDeletionMark" id="45">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+				<ExtendedTooltip name="FormSetDeletionMarkExtendedTooltip" id="46"/>
+			</Button>
+			<Button name="FormDataprocessorRegisterrecordsDocumentRegisterrecordsDocument" id="87">
+				<Type>CommandBarButton</Type>
+				<CommandName>DataProcessor.DocumentRegisterRecords.Command.DocumentRegisterRecords</CommandName>
+				<DataPath>Object.Ref</DataPath>
+				<ExtendedTooltip name="FormDataprocessorRegisterrecordsDocumentRegisterrecordsDocumentAdvancedTooltip" id="88"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupNumberDate" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="26"/>
+			<ChildItems>
+				<InputField name="Number" id="1">
+					<DataPath>Object.Number</DataPath>
+					<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="NumberContextMenu" id="2"/>
+					<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+				</InputField>
+				<InputField name="Date" id="4">
+					<DataPath>Object.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>from</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>14</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="DateContextMenu" id="5"/>
+					<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Sender" id="93">
+			<DataPath>Object.Sender</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sender</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="SenderContextMenu" id="94"/>
+			<ExtendedTooltip name="SenderAdvancedTooltip" id="95"/>
+			<Events>
+				<Event name="OnChange">SenderOnChange</Event>
+			</Events>
+		</InputField>
+		<InputField name="Recipient" id="96">
+			<DataPath>Object.Recipient</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Recipient</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="RecipientContextMenu" id="97"/>
+			<ExtendedTooltip name="RecipientAdvancedTooltip" id="98"/>
+			<Events>
+				<Event name="OnChange">RecipientOnChange</Event>
+			</Events>
+		</InputField>
+		<InputField name="Field1" id="102">
+			<DataPath>1/0:5ad9aa61-f12a-4e68-a836-7e176f06ce5c</DataPath>
+			<ContextMenu name="Attribute1ContextMenu" id="103"/>
+			<ExtendedTooltip name="Attribute1ExtendedTooltip" id="104"/>
+		</InputField>
+		<InputField name="Expenditure" id="99">
+			<DataPath>Object.Expenditure</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Expenditure</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ExpenditureContextMenu" id="100"/>
+			<ExtendedTooltip name="ExpenditureExtendedTooltip" id="101"/>
+		</InputField>
+		<UsualGroup name="GroupAmounts" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group amounts</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group amounts</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupAmountsAdvancedTooltip" id="28"/>
+			<ChildItems>
+				<UsualGroup name="GroupAmountOfWriteoff" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Expense</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount sent</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+					<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group amount of writeoff</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupAmountOfWriteoffExtendedTooltip" id="30"/>
+					<ChildItems>
+						<InputField name="SumOfWriteoff" id="81">
+							<DataPath>Object.SumOfWriteoff</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<TitleLocation>Left</TitleLocation>
+							<Width>21</Width>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="SumWriteoffOfTheContextMenu" id="82"/>
+							<ExtendedTooltip name="SumWriteoffTheExtendedTooltip" id="83"/>
+							<Events>
+								<Event name="OnChange">SumOfWriteoffOnChange</Event>
+							</Events>
+						</InputField>
+						<LabelField name="CurrencyExpense" id="67">
+							<DataPath>CurrencyExpense</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ExpenseCurrencyContextMenu" id="68"/>
+							<ExtendedTooltip name="CurrencyExpenseExtendedTooltip" id="69"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupAmountOfCapitalization" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Receipt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount received</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+					<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group amount of capitalization</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupAmountOfCapitalizationAdvancedTooltip" id="35"/>
+					<ChildItems>
+						<InputField name="SumIncome" id="84">
+							<DataPath>Object.SumIncome</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<TitleLocation>Left</TitleLocation>
+							<Width>21</Width>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="SumOfThePostingOfTheContextMenu" id="85"/>
+							<ExtendedTooltip name="SumOfThePostingOfTheExtendedTooltip" id="86"/>
+						</InputField>
+						<LabelField name="CurrencyReceipt" id="55">
+							<DataPath>CurrencyReceipt</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="CurrencyReceiptContextMenu" id="56"/>
+							<ExtendedTooltip name="CurrencyReceiptExtendedTooltip" id="57"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupDetails" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Details</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comment</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group details</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupDetailsAdvancedTooltip" id="78"/>
+			<ChildItems>
+				<InputField name="Details" id="22">
+					<DataPath>Object.Details</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Details</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Comment</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>32</Width>
+					<Height>1</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Details</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="DetailsContextMenu" id="23"/>
+					<ExtendedTooltip name="DetailsAdvancedTooltip" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.MoneyTransfer</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="CurrencyReceipt" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Currency receipt</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CurrencyExpense" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Currency expense</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

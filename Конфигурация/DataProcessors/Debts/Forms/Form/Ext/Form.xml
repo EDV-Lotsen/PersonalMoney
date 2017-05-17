@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Button name="CommandRefresh" id="14">
+			<Type>UsualButton</Type>
+			<Representation>Picture</Representation>
+			<Width>5</Width>
+			<Height>2</Height>
+			<CommandName>Form.Command.CommandRefresh</CommandName>
+			<ExtendedTooltip name="RefreshCommandExtendedTooltip" id="15"/>
+		</Button>
+		<Table name="MyDebts" id="26">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>MyDebts</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>My debts</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>I borrowed</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:LargeTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="MyDebtsShortcutMenu" id="27"/>
+			<AutoCommandBar name="MyDebtsCommandPanel" id="28"/>
+			<ExtendedTooltip name="MyDebtsExtendedTooltip" id="29"/>
+			<SearchStringAddition name="MyDebtsRowSearch" id="42">
+				<AdditionSource>
+					<Item>MyDebts</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="MyDebtsRowOfTheSearchContextMenu" id="43"/>
+				<ExtendedTooltip name="MyDebtsRowSearchAdvancedTooltip" id="44"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="MyDebtsStateView" id="45">
+				<AdditionSource>
+					<Item>MyDebts</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="MyDebtsStateViewContextMenu" id="46"/>
+				<ExtendedTooltip name="MyDebtsStateViewExtendedTooltip" id="47"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="MyDebtsManageSearch" id="48">
+				<AdditionSource>
+					<Item>MyDebts</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="MyDebtsManagingSearchContextMenu" id="49"/>
+				<ExtendedTooltip name="MyDebtsManageSearchAdvancedTooltip" id="50"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="MyDebtsCounterparty" id="30">
+					<DataPath>MyDebts.Counterparty</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="MyDebtsCounterpartyContextMenu" id="31"/>
+					<ExtendedTooltip name="MyDebtsCounterpartyExtendedTooltip" id="32"/>
+				</InputField>
+				<InputField name="MyDebtsSum" id="33">
+					<DataPath>MyDebts.Sum</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="MyDebtsSumShortcutMenu" id="34"/>
+					<ExtendedTooltip name="MyDebtsSumAdvancedTooltip" id="35"/>
+				</InputField>
+				<InputField name="MyDebtsCurrency" id="39">
+					<DataPath>MyDebts.Currency</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>3</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="MyDebtsCurrencyContextMenu" id="40"/>
+					<ExtendedTooltip name="MyDebtsCurrencyExtendedTooltip" id="41"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="IHave" id="16">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>IHave</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>I have</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>I lend</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:LargeTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="IHaveAContextMenu" id="17"/>
+			<AutoCommandBar name="IHaveTheCommandPanel" id="18"/>
+			<ExtendedTooltip name="IHaveTheExtendedTooltip" id="19"/>
+			<SearchStringAddition name="IHaveARowSearch" id="51">
+				<AdditionSource>
+					<Item>IHave</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="IHaveARowSearchContextMenu" id="52"/>
+				<ExtendedTooltip name="IHaveARowSearchAdvancedTooltip" id="53"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="IHaveStateView" id="54">
+				<AdditionSource>
+					<Item>IHave</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="IHaveStateViewContextMenu" id="55"/>
+				<ExtendedTooltip name="IHaveStateViewExtendedTooltip" id="56"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="IHaveManageSearch" id="57">
+				<AdditionSource>
+					<Item>IHave</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="IHaveManageSearchContextMenu" id="58"/>
+				<ExtendedTooltip name="IHaveManageSearchAdvancedTooltip" id="59"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="IHaveCounterparty" id="20">
+					<DataPath>IHave.Counterparty</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="IHaveCounterpartyContextMenu" id="21"/>
+					<ExtendedTooltip name="IHaveCounterpartyExtendedTooltip" id="22"/>
+				</InputField>
+				<InputField name="IHaveSum" id="23">
+					<DataPath>IHave.Sum</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="IHaveSumShortcutMenu" id="24"/>
+					<ExtendedTooltip name="IHaveSumAdvancedTooltip" id="25"/>
+				</InputField>
+				<InputField name="IHaveCurrency" id="36">
+					<DataPath>IHave.Currency</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>3</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="IHaveACurrencyContextMenu" id="37"/>
+					<ExtendedTooltip name="IHaveCurrencyExtendedTooltip" id="38"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelField name="Totals" id="11">
+			<DataPath>Totals</DataPath>
+			<TitleFont ref="style:LargeTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Font ref="style:LargeTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="TotalsContextMenu" id="12"/>
+			<ExtendedTooltip name="TotalsExtendedTooltip" id="13"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Debts</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="MyDebts" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>My debts</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Counterparty" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Counterparty</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Partner</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.CounterParties</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Sum" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sum</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Currency" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Totals" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Totals</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Totals</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="IHave" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>I have</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Counterparty" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Counterparty</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Partner</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.CounterParties</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Sum" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sum</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Currency" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="CommandRefresh" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command refresh</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command refresh</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.PictureRefresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandRefresh</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

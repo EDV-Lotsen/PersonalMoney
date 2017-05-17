@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Button name="FormCommandRefreshBalanceДС" id="11">
+			<Type>UsualButton</Type>
+			<Representation>Picture</Representation>
+			<Width>5</Width>
+			<Height>2</Height>
+			<CommandName>Form.Command.CommandRefreshBalanceДС</CommandName>
+			<ExtendedTooltip name="FormRefreshCommandBalanceDSExtendedTooltip" id="12"/>
+		</Button>
+		<Table name="Balance" id="1">
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>RemainsOfMoney</DataPath>
+			<RowPictureDataPath>2/10000000</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="BalanceShortcutMenu" id="2"/>
+			<AutoCommandBar name="BalanceCommandPanel" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="BalanceAdvancedTooltip" id="4"/>
+			<SearchStringAddition name="BalanceRowSearch" id="19">
+				<AdditionSource>
+					<Item>Balance</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="BalanceRowTheSearchContextMenu" id="20"/>
+				<ExtendedTooltip name="BalanceRowSearchAdvancedTooltip" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="BalanceStateView" id="22">
+				<AdditionSource>
+					<Item>Balance</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="BalanceStateViewContextMenu" id="23"/>
+				<ExtendedTooltip name="BalanceStateViewExtendedTooltip" id="24"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="BalanceManageSearch" id="25">
+				<AdditionSource>
+					<Item>Balance</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="BalanceManagingSearchContextMenu" id="26"/>
+				<ExtendedTooltip name="BalanceManageSearchAdvancedTooltip" id="27"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">BalanceChoice</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="BalanceWallet" id="5">
+					<DataPath>RemainsOfMoney.Wallet</DataPath>
+					<Width>20</Width>
+					<ContextMenu name="BalanceWalletContextMenu" id="6"/>
+					<ExtendedTooltip name="WalletBalanceAdvancedTooltip" id="7"/>
+				</LabelField>
+				<InputField name="BalanceCurrency" id="16">
+					<DataPath>RemainsOfMoney.Currency</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="BalanceCurrencyContextMenu" id="17"/>
+					<ExtendedTooltip name="BalanceCurrencyExtendedTooltip" id="18"/>
+				</InputField>
+				<InputField name="BalanceSumBalance" id="8">
+					<DataPath>RemainsOfMoney.Sum</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Balance</v8:content>
+						</v8:item>
+					</Title>
+					<Width>10</Width>
+					<ContextMenu name="BalanceSumBalanceContextMenu" id="9"/>
+					<ExtendedTooltip name="BalanceSumBalanceAdvancedTooltip" id="10"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelField name="Totals" id="13">
+			<DataPath>Totals</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Totals</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Totals</v8:content>
+				</v8:item>
+			</Title>
+			<Font bold="true" kind="AutoFont"/>
+			<ContextMenu name="TotalsContextMenu" id="14"/>
+			<ExtendedTooltip name="TotalsExtendedTooltip" id="15"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.RemainsOfMoney</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="RemainsOfMoney" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Remains of money</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Wallet" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Wallet</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Wallet</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Wallets</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Sum" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sum</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Currency" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Totals" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Totals</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="CommandRefreshBalanceДС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Refresh</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command refresh balance</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.PictureRefresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandRefreshBalanceДС</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

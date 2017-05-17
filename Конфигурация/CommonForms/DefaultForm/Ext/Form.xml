@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Start page</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<ChildItemsWidth>Equal</ChildItemsWidth>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupCreate" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupCreateAdvancedTooltip" id="12"/>
+			<ChildItems>
+				<Button name="NewMoneyIncome" id="47">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<Height>3</Height>
+					<CommandName>Form.Command.NewMoneyIncome</CommandName>
+					<ExtendedTooltip name="NewMoneyIncomeExtendedTooltip" id="48"/>
+				</Button>
+				<Button name="NewMoneyExpense" id="49">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<Height>3</Height>
+					<CommandName>Form.Command.NewMoneyExpense</CommandName>
+					<ExtendedTooltip name="NewExpenseMoneyAdvancedTooltip" id="50"/>
+				</Button>
+				<Button name="NewMoneyTransfer" id="51">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<Height>3</Height>
+					<CommandName>Form.Command.NewMoneyTransfer</CommandName>
+					<ExtendedTooltip name="NewMoneyTransferExtendedTooltip" id="52"/>
+				</Button>
+				<LabelDecoration name="Decoration2" id="98">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Decoration2ContextMenu" id="99"/>
+					<ExtendedTooltip name="Decoration2ExtendedTooltip" id="100"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupReports" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Reports</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reports</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group reports</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupReportsExtendedTooltip" id="28"/>
+			<ChildItems>
+				<UsualGroup name="GroupMyAssets" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>My assets</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+					<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group my assets</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupMyAssetsAdvancedTooltip" id="102"/>
+					<ChildItems>
+						<Table name="RemainsOfMoney" id="29">
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>32</Width>
+							<HeightInTableRows>3</HeightInTableRows>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>RemainsOfMoney</DataPath>
+							<RowPictureDataPath>1/10000000</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="RemainsOfMoneyContextMenu" id="30"/>
+							<AutoCommandBar name="MoneyRemainsOfTheCommandPanel" id="31">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="RemainsOfMoneyCommandRefreshBalanceДС" id="39">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.CommandRefreshBalanceДС</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="RemainsOfMoneyCommandRefreshBalanceDSExtendedTooltip" id="40"/>
+									</Button>
+									<Button name="RemainsOfMoneyOpenReportBalanceДС" id="41">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.OpenReportBalance</CommandName>
+										<ExtendedTooltip name="RemainsOfTheMoneyOpenBalanceReportDSExtendedTooltip" id="42"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="RemainsOfMoneyAdvancedTooltip" id="32"/>
+							<SearchStringAddition name="BalanceRowSearch" id="84">
+								<AdditionSource>
+									<Item>RemainsOfMoney</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RemainsOfMoneyRowSearchContextMenu" id="85"/>
+								<ExtendedTooltip name="RemainsOfMoneyRowSearchAdvancedTooltip" id="86"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="BalanceViewState" id="87">
+								<AdditionSource>
+									<Item>RemainsOfMoney</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RemainsOfMoneyStateViewContextMenu" id="88"/>
+								<ExtendedTooltip name="RemainsOfStateMoneyViewExtendedTooltip" id="89"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="BalanceSearchManagement" id="90">
+								<AdditionSource>
+									<Item>RemainsOfMoney</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="RemainsOfMoneyManagingSearchContextMenu" id="91"/>
+								<ExtendedTooltip name="RemainsOfMoneyManagementSearchExtendedTooltip" id="92"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">RemainsOfMoneySelect</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="RemainsOfMoneyWallet" id="33">
+									<DataPath>RemainsOfMoney.Wallet</DataPath>
+									<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>6</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Font ref="style:SmallTextFont" kind="StyleItem"/>
+									<ContextMenu name="RemainsOfMoneyWalletContextMenu" id="34"/>
+									<ExtendedTooltip name="RemainsOfMoneyWalletExtendedTooltip" id="35"/>
+								</LabelField>
+								<LabelField name="RemainsOfMoneySumBalance" id="36">
+									<DataPath>RemainsOfMoney.Sum</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Sum</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>NFD=2; NN=0,00</v8:content>
+										</v8:item>
+									</Format>
+									<Font ref="style:SmallTextFont" kind="StyleItem"/>
+									<ContextMenu name="RemainsASumOfMoneyToBalanceTheContextMenu" id="37"/>
+									<ExtendedTooltip name="RemainsOfMoneySumBalanceAdvancedTooltip" id="38"/>
+								</LabelField>
+								<InputField name="RemainsOfMoneyCurrency" id="79">
+									<DataPath>RemainsOfMoney.Currency</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Cur.</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>5</Width>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="style:SmallTextFont" kind="StyleItem"/>
+									<ContextMenu name="RemainsOfMoneyCurrencyContextMenu" id="80"/>
+									<ExtendedTooltip name="RemainsOfMoneyCurrencyAdvancedTooltip" id="81"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="GroupReportsTop" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group reports top</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group reports top</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupReportsTopExtendedTooltip" id="60"/>
+					<ChildItems>
+						<Button name="OpenPanelReports" id="63">
+							<Type>UsualButton</Type>
+							<Width>32</Width>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.OpenPanelReports</CommandName>
+							<Font ref="style:NormalTextFont" kind="StyleItem"/>
+							<ExtendedTooltip name="OpenPanelReportsExtendedTooltip" id="64"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupAdditional" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Additional</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Extras
+</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Additional</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>32</Width>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="GroupAdditionalExtendedTooltip" id="6"/>
+			<ChildItems>
+				<Button name="CommandCatalogs" id="71">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandCatalogs</CommandName>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandCatalogsTheExtendedTooltip" id="72"/>
+				</Button>
+				<Button name="CommandDocuments" id="73">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.CommandDocuments</CommandName>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="CommandDocumentsAdvancedTooltip" id="74"/>
+				</Button>
+				<Button name="OpenPlanning" id="67">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.OpenPlanning</CommandName>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenPlanningAdvancedTooltip" id="68"/>
+				</Button>
+				<UsualGroup name="GroupToolsHelp" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group tools help</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Group tools help</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupToolsHelpAdvancedTooltip" id="94"/>
+					<ChildItems>
+						<Button name="CommandTools" id="82">
+							<Type>UsualButton</Type>
+							<Width>32</Width>
+							<Height>1</Height>
+							<CommandName>Form.Command.CommandTools</CommandName>
+							<ExtendedTooltip name="CommandToolsAdvancedTooltip" id="83"/>
+						</Button>
+						<LabelDecoration name="Decoration1" id="95">
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="Decoration1ContextMenu" id="96"/>
+							<ExtendedTooltip name="Decoration1ExtendedTooltip" id="97"/>
+						</LabelDecoration>
+						<Button name="CommandHelp" id="69">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>32</Width>
+							<Height>1</Height>
+							<CommandName>Form.Command.CommandHelp</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Info</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Info</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="CommandExtendedHelpTooltip" id="70"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="RemainsOfMoney" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Remains of money</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Wallet" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Wallet</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Wallet</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Wallets</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Sum" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sum</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Currency" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Currency</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Currencies</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="CommandRefreshBalanceДС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Refresh balance</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command refresh balance</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CommandRefreshBalanceДС</Action>
+		</Command>
+		<Command name="OpenReportBalance" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>All cash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All wallets</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open report balance</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenReportBalance</Action>
+		</Command>
+		<Command name="NewMoneyIncome" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Receipt</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money income</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Receipt</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>NewMoneyIncome</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="NewMoneyExpense" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Expense</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money expense</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Expense</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>NewMoneyExpense</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="NewMoneyTransfer" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Transit</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>New money transfer</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Move</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>NewMoneyTransfer</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="OpenPanelReports" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Reports</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reports</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open panel reports</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open reports</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Reports</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>OpenPanelReports</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="OpenPlanning" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Planning</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Planning</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open planning</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Plan</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>OpenPlanning</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandHelp" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Info</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Info
+</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command help</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Information</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandHelp</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandCatalogs" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Catalogs</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Catalogs
+</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command catalogs</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Catalogs</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandCatalogs</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandDocuments" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>All
+documents</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All documents
+
+</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command documents</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Documents</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandDocuments</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="CommandTools" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Tools</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Service</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Command tools</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Gear</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>CommandTools</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

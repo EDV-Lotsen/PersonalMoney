@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="GroupCurrencies" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupCurrenciesExtendedTooltip" id="14"/>
+			<ChildItems>
+				<PictureDecoration name="DecorationCurrencies" id="15">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Decoration currencies</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Currencies</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="DecorationCurrenciesTheContextMenu" id="16"/>
+					<ExtendedTooltip name="DecorationCurrenciesExtendedTooltip" id="17"/>
+				</PictureDecoration>
+				<Button name="OpenCatalogCurrencies" id="5">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.OpenCatalogCurrencies</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenCatalogCurrenciesExtendedTooltip" id="6"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupWallets" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupWalletsExtendedTooltip" id="19"/>
+			<ChildItems>
+				<PictureDecoration name="DecorationWallets" id="20">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Decoration currencies</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Wallets</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="WalletsDecorationContextMenu" id="21"/>
+					<ExtendedTooltip name="DecorationWalletsExtendedTooltip" id="22"/>
+				</PictureDecoration>
+				<Button name="OpenCatalogWallets" id="1">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.OpenCatalogWallets</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenCatalogWalletsExtendedTooltip" id="2"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupExpenitures" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupArticleDDSAdvancedTooltip" id="26"/>
+			<ChildItems>
+				<PictureDecoration name="DecorationExpeniture" id="27">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Decoration expeniture</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Expenditures</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="DecorationExpenitureContextMenu" id="28"/>
+					<ExtendedTooltip name="DecorationExpenitureExtendedTooltip" id="29"/>
+				</PictureDecoration>
+				<Button name="OpenCatalogArticleDDS" id="3">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.OpenCatalogArticleDDS</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenCatalogArticleDDSAdvancedTooltip" id="4"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupPlanExpenitures" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupPlanExpenituresExtendedTooltip" id="33"/>
+			<ChildItems>
+				<PictureDecoration name="DecorationPlanExpenitures" id="34">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Decoration plan expenitures</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>0</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="DecorationPlanExpenituresContextMenu" id="35"/>
+					<ExtendedTooltip name="DecorationPlanExpenituresExtendedTooltip" id="36"/>
+				</PictureDecoration>
+				<Button name="OpenCatalogPlanExpenitures" id="9">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<CommandName>Form.Command.OpenCatalogPlanExpenitures</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenPlanCatalogExpenituresExtendedTooltip" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupPartners" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group partners</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupPartnersExtendedTooltip" id="47"/>
+			<ChildItems>
+				<PictureDecoration name="DecorationPartners" id="48">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Decoration partners</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>0</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="DecorationPartnersContextMenu" id="49"/>
+					<ExtendedTooltip name="DecorationPartnersExtendedTooltip" id="50"/>
+				</PictureDecoration>
+				<Button name="OpenCatalogCounterParties" id="7">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.OpenCatalogCounterParties</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenCatalogCounterPartiesExtendedTooltip" id="8"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="GroupUsers" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group users</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupUsersAdvancedTooltip" id="40"/>
+			<ChildItems>
+				<PictureDecoration name="DecorationUsers" id="41">
+					<Width>6</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Decoration users</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Users</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="DecorationUsersContextMenu" id="42"/>
+					<ExtendedTooltip name="DecorationUsersAdvancedTooltip" id="43"/>
+				</PictureDecoration>
+				<Button name="OpenCatalogUsers" id="11">
+					<Type>UsualButton</Type>
+					<Width>32</Width>
+					<CommandName>Form.Command.OpenCatalogUsers</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="OpenCatalogUsersAdvancedTooltip" id="12"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="OpenCatalogWallets" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Wallets</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Wallets</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open catalog wallets</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenCatalogWallets</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="OpenCatalogArticleDDS" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Article income and expenses</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Items of income/expenditure</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open catalog article DDS</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenCatalogArticleDDS</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="OpenCatalogCurrencies" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Currencies</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Currencies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open catalog currencies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenCatalogCurrencies</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="OpenCatalogCounterParties" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Partners</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Partners</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open catalog CounterParties</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenCatalogCounterParties</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="OpenCatalogPlanExpenitures" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Plan expenitures</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Items of planned expences</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open catalog plan expenitures</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenCatalogPlanExpenitures</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="OpenCatalogUsers" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Users</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Users</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Open catalog users</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenCatalogUsers</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
